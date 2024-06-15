@@ -1,0 +1,106 @@
+@media (max-width: 600px){
+    html{
+        font-size: 50%;
+    }
+    @mixin tran {
+        transition: all 0.5s ease-in-out;
+    }
+    #navbar{
+        min-height: 6rem;
+        height: auto;
+        .nav-container{
+            padding: 3rem 0;
+            align-items:flex-start;
+            
+            #nav-btn{
+                display: block;
+            }
+            .nav-items{
+                display: none;
+                flex-direction: column;
+                text-align: center;
+
+                li{
+                    margin-bottom: 3rem;
+                }
+            }
+            .nav-active{
+                display: flex;
+            }
+            
+        }
+    }
+    #showcase{
+        .ovrlay{
+            h2{
+                font-size: 0.2rem;
+            }
+        }
+    }
+    .social-link{
+        top: 92%;
+        left: 28%;
+
+        a{
+            display: inline-block;
+        }
+    }
+    #vd-box{
+        .vd-con{
+    
+            #video{
+                width: 30rem;
+                height: 20rem;
+                border: 1px solid red;
+                margin: 0 1rem;
+            }
+            
+        }
+    }
+    #tutor{
+        .box-con{
+            .main-box{
+                display: flex;
+                justify-content: space-between;
+                flex-direction:column;
+                .sub-box{
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+    #about-us{
+        .about-con{
+            .about-items{
+                .about-para{
+                    width: 100%;
+                    margin-bottom:2rem ;
+                }
+            }
+        }
+    }
+    #items{
+        .course-items{
+            overflow-x: auto;
+            margin-bottom: 3rem;
+    
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            .box{
+                height: 100%;
+                min-width: 20rem;
+                margin-right: 2rem;
+            }
+        }
+    }
+    #footer{
+        padding-bottom: 10rem;
+        .footer-con{
+            .foot-item{
+                flex-direction: column;
+            }
+        }
+    }
+        
+}
